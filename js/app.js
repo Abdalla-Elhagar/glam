@@ -101,7 +101,7 @@ const P={
   contact(){
     $("#cs").onclick=()=>{const n=$("#cn").value.trim(),m=$("#cm").value.trim();if(!n||!m){toast("⚠️ اكتبي اسمك ورسالتك");return}
       window.open(`https://wa.me/${WA}?text=${encodeURIComponent("👤 "+n+"\n"+m)}`,"_blank")};
-    $("#wn").textContent="+"+WA;
+    $("#wn").textContent=PHONE;
   }
 };
 layout();(P[document.body.dataset.page]||(()=>{}))();reveal();
